@@ -1,4 +1,3 @@
-import java.awt.*;
 public class Rectangle extends GraphicObject{
 	private double length;	//half length
 	private double width;	//half width
@@ -33,5 +32,10 @@ public class Rectangle extends GraphicObject{
 	
 	public double getWidth(){
 		return width;
+	}
+	
+	public String toString(){
+		String result = super.toString() + " " + length + " " + width + " ";
+		return result;
 	}
 }
