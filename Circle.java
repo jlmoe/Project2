@@ -1,4 +1,3 @@
-import java.awt.*;
 public class Circle extends GraphicObject{
 	private double radius;
 
@@ -31,5 +30,10 @@ public class Circle extends GraphicObject{
 	
 	public double getRadius(){
 		return radius;
+	}
+	
+	public String toString(){
+		String result = super.toString() + " " + radius;
+		return result;
 	}
 }
